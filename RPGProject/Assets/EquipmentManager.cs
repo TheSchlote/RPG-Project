@@ -95,7 +95,8 @@ public class EquipmentManager : MonoBehaviour
         
         foreach (EquipmentMeshRegion blendShape in item.coveredMeshRegions)
         {
-            targetMesh.SetBlendShapeWeight((int)blendShape, weight);         
+            targetMesh.SetBlendShapeWeight((int)blendShape, weight);
+            Debug.Log("Target Mesh:" + targetMesh + " blendShape " + blendShape + " weight " + weight + " item " + item.coveredMeshRegions);
         }
     }
 
